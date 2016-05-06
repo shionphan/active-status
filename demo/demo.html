@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Shionphan. Master of joomla178.com" />
+  <title>Adding class name for a few seconds by event action</title>
+  <meta name="description" content="Adding class name for a few seconds by event action, Maybe milli seconds. Then you can add css3 animation for the same time">
+  <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet">
+  <link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//cdn.bootcss.com/highlight.js/9.2.0/styles/github.min.css" rel="stylesheet">
+  <link href="active-status.css" rel="stylesheet">
+  <script src="//cdn.bootcss.com/highlight.js/9.2.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Hello! Active-status</h1>
+      <hr />
+      <div class="alert alert-info" role="alert">Adding class name in a few seconds by event action, Maybe milli seconds. Then you can add css3 animation in the same time. This plugin depends on jQuery, link the jquery at first.</div>
+    </header>
+    <section>
+      <div class="row">
+        <div class="col-sm-8">
+          <h3>Active-status Example</h3>
+          <hr />
+          <div class="panel panel-danger table-responsive">
+            <table class="table">
+              <tr>
+                <th class="row danger" width="20%">#</th>
+                <th class="danger">Animation</th>
+                <th class="danger">No effect</th>
+              </tr>
+              <tr>
+                <th>Background color:</th>
+                <td><a href="javascript:void(0)" class="btn btn-warning btn-test">Click me</a></td>
+                <td><a href="javascript:void(0)" class="btn btn-warning">Click me</a></td>
+              </tr>
+              <tr>
+                <th>Vote animation:</th>
+                <td><a href="javascript:void(0)" class="btn btn-info btn-zan"><i class="fa fa-thumbs-o-up"></i><span>11 Votes</span></a></td>
+                <td><a href="javascript:void(0)" class="btn btn-info"><i class="fa fa-thumbs-o-up"></i><span>11 Votes</span></a></td>
+              </tr>
+              <tr>
+                <th>Other element:</th>
+                <td>
+                  <div class="input-group test-group">
+                    <span class="input-group-btn"><a class="btn btn-danger">Click me</a></span>
+                    <input type="text" class="form-control" placeholder="Effect...">
+                  </div>
+                </td>
+                <td>
+                  <div class="input-group">
+                    <span class="input-group-btn"><a class="btn btn-danger">Click me</a></span>
+                    <input type="text" class="form-control" placeholder="Effect...">
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <h3>Active-status Usage</h3>
+          <hr />
+          <p>Default opition</p>
+          <pre><code class="javscript">$('.testdom').astatus()</code></pre>
+          <p>Add function</p>
+          <pre><code class="javscript">$('.testdom').astatus(function(){
+  //...do something
+})</code></pre>
+          <p>Effect on another element (All opitions)</p>
+          <pre><code class="javscript">$('.testdom').astatus({
+  delay:300, //Delay time
+  etype:'click', //Event type, click or touchstart
+  cname:'active-status', //Class name
+  adddom:'.test-anotherdom' //Other element toggle class name
+},function(){
+  //...do something
+})</code></pre>
+          <p>CSS Animation</p>
+          <pre><code class="javscript">.testdom{
+  -webkit-transition: all 300ms;
+  -o-transition: all 300ms;
+  transition: all 300ms;
+}
+.testdom.active-status{
+  -webkit-transition: all 300ms;
+  -o-transition: all 300ms;
+  transition: all 300ms;
+}</code></pre>
+        </div>
+        <div class="col-sm-4">
+          <h3>Download</h3>
+          <hr />
+          <div class="row">
+            <div class="btn-group col-xs-12">
+            <a class="btn btn-success col-xs-6 btn-lg" href="https://github.com/shionphan/active-status/archive/master.zip" target="_blank">Github</a>
+            <a class="btn btn-info col-xs-6 btn-lg" href="https://github.com/shionphan/active-status/archive/master.zip" target="_blank">Goovell</a>
+            </div>
+          </div>
+          <h3>Links</h3>
+          <hr />
+          <div class="row">
+            <div class="btn-group col-xs-12" style="margin-bottom: 10px;">
+              <a href="http://www.joomla178.com" class="btn btn-default col-xs-4" target="_blank"><i class="fa fa-globe"></i> Site</a>  <a href="https://github.com/shionphan" class="btn btn-default col-xs-4" target="_blank"><i class="fa fa-github-alt"></i> Github</a>  <a href="https://git.goovell.com/shionphan" class="btn btn-default col-xs-4" target="_blank"><i class="fa fa-git-square"></i> Goovell</a>
+            </div>
+            <div class="col-xs-12">
+              <a class="btn btn-default col-xs-12 align-left" href="https://github.com/shionphan/iewarning" target="_blank" style="margin-bottom: 10px;">IE Warning @Github</a>
+              <a class="btn btn-default col-xs-12 text-left" href="https://git.goovell.com/shionphan/iewarning" target="_blank">IE Warning @Goovell</a>
+            </div>
+          </div>
+          <h3>License</h3>
+          <hr />
+          <p>The MIT License (MIT)</p>
+        </div>
+      </div>
+    </section>
+    <footer></footer>
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="active-status.js"></script>
+    <script>
+    hljs.initHighlightingOnLoad();
+    </script>
+    <script type="text/javascript">
+    $(function() {
+      $('a.btn-test').astatus(function() {
+        //...do something
+      })
+      $('a.btn-zan').astatus({
+        delay: 500,
+        etype: 'click',
+        cname: 'active-status'
+      }, function() {
+        //alert("See animation");
+      })
+      $('.test-group a.btn-danger').astatus({
+        delay: 300,
+        etype: 'click',
+        cname: 'active-status',
+        adddom: '.test-group'
+      })
+    });
+    </script>
+</body>
+
+</html>
