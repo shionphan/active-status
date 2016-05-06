@@ -7,9 +7,9 @@
 
 ## 演示
 
-English: http://demo.joomla178.com/active-status/demo.html
+English: http://demo.joomla178.com/active-status/demo/demo.html
 
-简体中文: http://demo.joomla178.com/active-status/demo_cn.html
+简体中文: http://demo.joomla178.com/active-status/demo/demo_cn.html
 
 ## 用法
 
