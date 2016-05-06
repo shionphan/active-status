@@ -13,6 +13,7 @@
     var opts = $.extend({}, defualts, options);
     var element = (opts.adddom.length > 0) ? $(opts.adddom) : this;
 
+    this.on(opts.etype,obj);
     this.on(opts.etype,function(){
       if(element.hasClass(opts.cname)){
         return;
@@ -22,6 +23,5 @@
         element.removeClass(opts.cname);
       }, opts.delay);
     });
-    element.on(opts.etype,obj);
   }
 }(jQuery);
