@@ -11,7 +11,7 @@ English: http://demo.joomla178.com/active-status/demo/demo.html
 
 简体中文: http://demo.joomla178.com/active-status/demo/demo_cn.html
 
-## 使用用法
+## 使用方法
 
 ### 默认参数
 
