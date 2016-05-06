@@ -4,6 +4,7 @@ Hello! Active-status
 > Adding class name in a few seconds by event action, Maybe milli seconds. Then you can add css3 animation in the same time. Plugin depends on jQuery, link the jquery at first.
 
 查看简体中文自述文件：[README_CN.md](README_CN.md)
+查看国内Git仓库：[Goovell](https://git.goovell.com/shionphan/active-status)
 
 ## Demo
 

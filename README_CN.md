@@ -4,6 +4,7 @@
 > 这是一个给事件的DOM对象在操作事件时增加一个`class`类名，并存在一段时间后将其移除，在这段时间内，你就可以对这个DOM对象增加一些CSS样式，例如CSS3的过程动画，本插件依赖于jQuery，所以必须要先加载jQuery.
 
 English readme：[README.md](README.md)
+查看国内Git仓库：[Goovell](https://git.goovell.com/shionphan/active-status)
 
 ## 演示
 
